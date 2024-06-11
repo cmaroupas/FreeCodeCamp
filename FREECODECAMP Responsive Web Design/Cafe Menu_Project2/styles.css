@@ -1,27 +1,33 @@
+/* Set background image and font for the whole body */
 body {
   background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
   font-family: sans-serif;
   padding: 20px;
 }
 
+/* Style for main headings */
 h1 {
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
 }
 
+/* Style for secondary headings */
 h2 {
   font-size: 30px;
 }
 
+/* Italicize text with class 'established' */
 .established {
   font-style: italic;
 }
 
+/* Center-align main headings, secondary headings, and paragraphs */
 h1, h2, p {
   text-align: center;
 }
 
+/* Style for the menu container */
 .menu {
   width: 80%;
   background-color: burlywood;
@@ -31,26 +37,32 @@ h1, h2, p {
   max-width: 500px;
 }
 
+/* Center-align images */
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: -25px;
 }
+
+/* Style for horizontal line */
 hr {
   height: 2px;
   background-color: brown;
   border-color: brown;
 }
 
+/* Margin for elements with class 'bottom-line' */
 .bottom-line {
   margin-top: 25px;
 }
 
+/* Change font family for main and secondary headings */
 h1, h2 {
   font-family: Impact, serif;
 }
 
+/* Inline block display and margins for paragraphs within items */
 .item p {
   display: inline-block;
   margin-top: 5px;
@@ -58,38 +70,44 @@ h1, h2 {
   font-size: 18px;
 }
 
+/* Left-align text for elements with class 'flavor' and 'dessert', set width */
 .flavor, .dessert {
   text-align: left;
   width: 75%;
 }
 
+/* Right-align text for elements with class 'price', set width */
 .price {
   text-align: right;
   width: 25%;
 }
 
-/* FOOTER */
-
+/* Style for footer */
 footer {
   font-size: 14px;
 }
 
+/* Margin for address in footer */
 .address {
   margin-bottom: 5px;
 }
 
+/* Link color settings */
 a {
   color: black;
 }
 
+/* Visited link color settings */
 a:visited {
   color: black;
 }
 
+/* Hover color settings */
 a:hover {
   color: brown;
 }
 
+/* Active link color settings */
 a:active {
   color: brown;
 }
