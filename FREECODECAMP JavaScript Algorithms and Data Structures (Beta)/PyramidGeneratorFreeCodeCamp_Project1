@@ -1,25 +1,45 @@
+// Define the character to use for the pyramid
 const character = "#";
+
+// Define the number of rows in the pyramid
 const count = 10;
+
+// Initialize an empty array to store the rows of the pyramid
 const rows = [];
+
+// Variable to track whether the pyramid should be inverted or not
 let inverted = false;
 
-
+// Function to create a single row of the pyramid
 function padRow(rowNumber, rowCount) {
-  return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+  // Calculate the number of spaces needed before the characters
+  const spacesBefore = " ".repeat(rowCount - rowNumber);
+  // Calculate the number of characters for the current row
+  const characters = character.repeat(2 * rowNumber - 1);
+  // Combine spaces, characters, and trailing spaces to form the row
+  return spacesBefore + characters + spacesBefore;
 }
 
+// Loop to generate each row of the pyramid
 for (let i = 1; i <= count; i++) {
+  // Check if the pyramid should be inverted
   if (inverted) {
+    // Add the current row to the beginning of the array (inverted order)
     rows.unshift(padRow(i, count));
   } else {
+    // Add the current row to the end of the array (normal order)
     rows.push(padRow(i, count));
   }
 }
 
-let result = ""
+// Initialize a variable to store the final result
+let result = "";
 
+// Loop through each row and append it to the result variable
 for (const row of rows) {
+  // Append a new line and the current row to the result
   result = result + "\n" + row;
 }
 
+// Output the final result to the console
 console.log(result);

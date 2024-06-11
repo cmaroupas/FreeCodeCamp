@@ -1,3 +1,4 @@
+/* Resetting margin, padding, and box-sizing for all elements */
 *,
 *::before,
 *::after {
@@ -6,35 +7,40 @@
   box-sizing: border-box;
 }
 
+/* Defining custom CSS variables */
 :root {
-  --yellow: #f1be32;
-  --golden-yellow: #feac32;
-  --dark-purple: #110815;
-  --light-grey: #efefef;
+  --yellow: #f1be32; /* Custom yellow */
+  --golden-yellow: #feac32; /* Custom golden yellow */
+  --dark-purple: #110815; /* Custom dark purple */
+  --light-grey: #efefef; /* Custom light grey */
 }
 
+/* Styling for the body element */
 body {
-  background-color: var(--dark-purple);
-  color: var(--light-grey);
-  text-align: center;
+  background-color: var(--dark-purple); /* Setting background color */
+  color: var(--light-grey); /* Setting text color */
+  text-align: center; /* Aligning text to center */
 }
 
+/* Styling for a container holding background information */
 .bg-information-container {
-  margin: 15px 0 25px;
-  font-size: 1.2rem;
+  margin: 15px 0 25px; /* Setting margin */
+  font-size: 1.2rem; /* Setting font size */
 }
 
+/* Styling for a button element */
 .btn {
-  cursor: pointer;
-  padding: 10px;
-  margin: 10px;
-  color: var(--dark-purple);
-  background-color: var(--golden-yellow);
-  background-image: linear-gradient(#fecc4c, #ffac33);
-  border-color: var(--golden-yellow);
-  border-width: 3px;
+  cursor: pointer; /* Changing cursor to pointer on hover */
+  padding: 10px; /* Setting padding */
+  margin: 10px; /* Setting margin */
+  color: var(--dark-purple); /* Setting text color */
+  background-color: var(--golden-yellow); /* Setting background color */
+  background-image: linear-gradient(#fecc4c, #ffac33); /* Setting background gradient */
+  border-color: var(--golden-yellow); /* Setting border color */
+  border-width: 3px; /* Setting border width */
 }
 
+/* Styling for a button element on hover */
 .btn:hover {
-  background-image: linear-gradient(#ffcc4c, #f89808);
+  background-image: linear-gradient(#ffcc4c, #f89808); /* Changing background gradient on hover */
 }

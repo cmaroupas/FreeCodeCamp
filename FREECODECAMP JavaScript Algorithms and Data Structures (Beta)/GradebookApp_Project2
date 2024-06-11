@@ -1,12 +1,17 @@
+// Function to calculate the average of an array of scores
 function getAverage(scores) {
     let sum = 0;
 
+    // Iterate through each score in the array and add it to the sum
     for (const score of scores) {
         sum += score;
     }
 
+    // Return the average by dividing the sum by the number of scores
     return sum / scores.length;
 }
+
+// Function to determine the grade based on the score
 function getGrade(score) {
     if (score === 100) {
         return "A++";
@@ -23,24 +28,29 @@ function getGrade(score) {
     }
 }
 
+// Function to check if a score has a passing grade
 function hasPassingGrade(score) {
+    // If the grade is not "F", return true (indicating passing)
     if (getGrade(score) !== "F") {
         return true;
     }
+    // Otherwise, return false (indicating failing)
     else {
         return false;
     }
-
 }
+
+// Function to generate a message for the student
 function studentMsg(totalScores, studentScore) {
-
-
-if (hasPassingGrade(studentScore)) {
-    return "Class average: " + getAverage(totalScores) + ". " + "Your grade: " + getGrade(studentScore) + ". " + "You passed the course.";
-} else {
-    return "Class average: " + getAverage(totalScores) + ". " + "Your grade: " + getGrade(studentScore) + ". " + "You failed the course.";
+    // Check if the student has a passing grade
+    if (hasPassingGrade(studentScore)) {
+        // If passing, generate a message indicating passing
+        return "Class average: " + getAverage(totalScores) + ". " + "Your grade: " + getGrade(studentScore) + ". " + "You passed the course.";
+    } else {
+        // If failing, generate a message indicating failing
+        return "Class average: " + getAverage(totalScores) + ". " + "Your grade: " + getGrade(studentScore) + ". " + "You failed the course.";
+    }
 }
-}
 
-
+// Test the studentMsg function with sample data
 console.log(studentMsg([92, 88, 12, 77, 57, 100, 67, 38, 97, 89], 37));
