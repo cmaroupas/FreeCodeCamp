@@ -1,0 +1,45 @@
+h1 {
+    text-align: center; /* Center aligns the text within the h1 element */
+}
+
+.container {
+    background-color: rgb(255, 255, 255); /* Sets the background color of the container to white */
+    padding: 10px 0; /* Adds 10px padding to the top and bottom of the container */
+}
+
+.marker {
+    width: 200px; /* Sets the width of the marker element */
+    height: 25px; /* Sets the height of the marker element */
+    margin: 10px auto; /* Adds 10px margin to the top and bottom, and centers the element horizontally */
+}
+
+.cap {
+    width: 60px; /* Sets the width of the cap element */
+    height: 25px; /* Sets the height of the cap element */
+}
+
+.sleeve {
+    width: 110px; /* Sets the width of the sleeve element */
+    height: 25px; /* Sets the height of the sleeve element */
+    background-color: rgba(255, 255, 255, 0.5); /* Sets the background color to white with 50% opacity */
+    border-left: 10px double rgba(0, 0, 0, 0.75); /* Adds a double border of 10px width on the left side with black color at 75% opacity */
+}
+
+.cap, .sleeve {
+    display: inline-block; /* Displays these elements inline but allows them to have block properties */
+}
+
+.red {
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27)); /* Sets a linear gradient background from brown to pink to red */
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8); /* Adds a shadow effect with a reddish-brown color and 80% opacity */
+}
+
+.green {
+    background: linear-gradient(#55680D, #71F53E, #116C31); /* Sets a linear gradient background from dark green to bright green to medium green */
+    box-shadow: 0 0 20px 0 #3B7E20CC; /* Adds a shadow effect with a green color and 80% opacity (CC in hex is equivalent to 204 in decimal, which is approximately 80% of 255) */
+}
+
+.blue {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%)); /* Sets a linear gradient background using HSL values from dark cyan to bright blue to medium blue */
+    box-shadow: 0 0 20px 0 blue; /* Adds a shadow effect with a blue color */
+}
