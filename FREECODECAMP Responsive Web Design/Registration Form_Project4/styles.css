@@ -1,0 +1,93 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #1b1b32; /* Background color */
+    color: #f5f6f7; /* Text color */
+    font-family: Tahoma; /* Font family */
+    font-size: 16px; /* Base font size */
+  }
+  
+  /* Center-align headings and paragraphs */
+  h1, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  /* Style for forms */
+  form {
+    width: 60vw; /* 60% of the viewport width */
+    max-width: 500px; /* Maximum width of 500px */
+    min-width: 300px; /* Minimum width of 300px */
+    margin: 0 auto; /* Center the form horizontally */
+    padding-bottom: 2em; /* Space at the bottom */
+  }
+  
+  /* Style for fieldsets */
+  fieldset {
+    border: none; /* Remove border */
+    padding: 2rem 0; /* Padding top and bottom */
+    border-bottom: 3px solid #3b3b4f; /* Bottom border */
+  }
+  
+  /* Remove bottom border from the last fieldset */
+  fieldset:last-of-type {
+    border-bottom: none;
+  }
+  
+  /* Style for labels */
+  label {
+    display: block; /* Make labels display as block */
+    margin: 0.5rem 0; /* Add margin */
+  }
+  
+  /* Style for input, textarea, and select elements */
+  input,
+  textarea,
+  select {
+    margin: 10px 0 0 0; /* Margin for spacing */
+    width: 100%; /* Full width */
+    min-height: 2em; /* Minimum height */
+  }
+  
+  /* Style for text inputs and textareas */
+  input, textarea {
+    background-color: #0a0a23; /* Background color */
+    border: 1px solid #0a0a23; /* Border color */
+    color: #ffffff; /* Text color */
+  }
+  
+  /* Style for inline elements */
+  .inline {
+    width: unset; /* Unset width */
+    margin: 0 0.5em 0 0; /* Margin for spacing */
+    vertical-align: middle; /* Align vertically */
+  }
+  
+  /* Style for submit button */
+  input[type="submit"] {
+    display: block; /* Make the submit button a block element */
+    width: 60%; /* 60% width */
+    margin: 1em auto; /* Margin for spacing */
+    height: 2em; /* Height */
+    font-size: 1.1rem; /* Font size */
+    background-color: #3b3b4f; /* Background color */
+    border-color: white; /* Border color */
+    min-width: 300px; /* Minimum width */
+  }
+  
+  /* Style for file input */
+  input[type="file"] {
+    padding: 1px 2px; /* Padding */
+  }
+  
+  /* Style for inline elements */
+  .inline {
+    display: inline; /* Display inline */
+  }
+  
+  /* Style for terms and conditions link */
+  label[for="terms-and-conditions"] a {
+    color: #dfdfe2; /* Text color */
+  }
+  
