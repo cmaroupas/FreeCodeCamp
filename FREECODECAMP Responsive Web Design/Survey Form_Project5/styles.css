@@ -1,0 +1,75 @@
+body {
+    
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: hsl(296, 16%, 82%);
+    padding: 20px;
+}
+
+
+#survey-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #aea4cf;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#title {
+    text-align: center;
+    color: #333;
+}
+
+#description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+label {
+    
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #461085;
+    border-radius: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+fieldset label {
+    display: inline-block;
+    margin-right: 10px;
+    
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 20px 40px;
+    background-color: #67626d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #6d39b6;
+}
