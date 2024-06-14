@@ -1,0 +1,49 @@
+/* Apply box-sizing to all elements and their pseudo-elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Remove default margin and set a default font and background for the body */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #f5f6f7;
+}
+
+/* Style the header section */
+.header {
+    text-align: center; /* Center-align text */
+    text-transform: uppercase; /* Convert text to uppercase */
+    padding: 32px; /* Add padding around the header */
+    background-color: #0a0a23; /* Set background color */
+    color: #fff; /* Set text color to white */
+    border-bottom: 4px solid #fdb347; /* Add a bottom border */
+}
+
+/* Style the gallery container */
+.gallery {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Arrange items in a row */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 16px; /* Set gap between items */
+    max-width: 1400px; /* Set maximum width of the gallery */
+    margin: 0 auto; /* Center the gallery horizontally */
+    padding: 20px 10px; /* Add padding around the gallery */
+}
+
+/* Style images inside the gallery */
+.gallery img {
+    width: 100%; /* Make image take full width of the container */
+    max-width: 350px; /* Set maximum width for the images */
+    height: 300px; /* Set fixed height for the images */
+    object-fit: cover; /* Cover the area without stretching the image */
+    border-radius: 10px; /* Round the corners of the images */
+}
+
+/* Create an empty space at the end of the gallery row */
+.gallery::after {
+    content: ""; /* Insert empty content */
+    width: 350px; /* Set width of the empty space */
+}
