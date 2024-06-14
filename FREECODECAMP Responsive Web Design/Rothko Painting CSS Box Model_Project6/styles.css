@@ -1,0 +1,38 @@
+/* Class for the first box element */
+.one {
+    width: 425px; /* Width of the box */
+    height: 150px; /* Height of the box */
+    background-color: #efb762; /* Background color of the box */
+    margin: 20px auto; /* Vertical margin of 20px and centered horizontally */
+    box-shadow: 0 0 3px 3px #efb762; /* Box shadow with a specific color and size */
+    border-radius: 9px; /* Rounded corners with a radius of 9px */
+    transform: rotate(-0.6deg); /* Slight rotation of the box */
+}
+
+/* Class for the second box element */
+.two {
+    width: 475px; /* Width of the box */
+    height: 200px; /* Height of the box */
+    background-color: #8f0401; /* Background color of the box */
+    margin: 0 auto 20px; /* Centered horizontally with a bottom margin of 20px */
+    box-shadow: 0 0 3px 3px #8f0401; /* Box shadow with a specific color and size */
+    border-radius: 8px 10px; /* Rounded corners with varying radii */
+    transform: rotate(0.4deg); /* Slight rotation of the box */
+}
+
+/* Common styles for both .one and .two classes */
+.one, .two {
+    filter: blur(1px); /* Adds a blur effect to both elements */
+}
+
+/* Class for the third box element */
+.three {
+    width: 91%; /* Width of the box relative to its container */
+    height: 28%; /* Height of the box relative to its container */
+    background-color: #b20403; /* Background color of the box */
+    margin: auto; /* Centered both vertically and horizontally */
+    filter: blur(2px); /* Adds a stronger blur effect */
+    box-shadow: 0 0 5px 5px #b20403; /* Box shadow with a specific color and size */
+    border-radius: 30px 25px 60px 12px; /* Rounded corners with varying radii */
+    transform: rotate(-0.2deg); /* Slight rotation of the box */
+}
