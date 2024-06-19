@@ -1,0 +1,177 @@
+/* Hide elements meant for screen readers */
+span[class~="sr-only"] {
+    border: 0 !important; /* Remove any borders */
+    clip: rect(1px, 1px, 1px, 1px) !important; /* Clip to hide element */
+    clip-path: inset(50%) !important; /* Modern clip-path for hiding */
+    height: 1px !important; /* Set height to 1px */
+    width: 1px !important; /* Set width to 1px */
+    position: absolute !important; /* Absolute positioning to remove from document flow */
+    overflow: hidden !important; /* Hide overflow content */
+    white-space: nowrap !important; /* Ensure no wrapping */
+    padding: 0 !important; /* Remove padding */
+    margin: -1px !important; /* Negative margin to further hide */
+}
+
+/* Box sizing for all HTML elements */
+html {
+    box-sizing: border-box;
+}
+
+/* Base styles for the body */
+body {
+    font-family: sans-serif; /* Use a sans-serif font */
+    color: #0a0a23; /* Set text color */
+}
+
+/* Styling for main heading */
+h1 {
+    max-width: 37.25rem; /* Limit width of heading */
+    margin: 0 auto; /* Center align horizontally */
+    padding: 1.5rem 1.25rem; /* Padding for spacing */
+}
+
+/* Flexbox styles for elements inside h1 */
+h1 .flex {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column-reverse; /* Column layout with reversed order */
+    gap: 1rem; /* Spacing between flex items */
+}
+
+/* Styles for first span inside h1 */
+h1 .flex span:first-of-type {
+    font-size: 0.7em; /* Smaller font size */
+}
+
+/* Styles for last span inside h1 */
+h1 .flex span:last-of-type {
+    font-size: 1.2em; /* Larger font size */
+}
+
+/* Styles for sections on the page */
+section {
+    max-width: 40rem; /* Limit width of sections */
+    margin: 0 auto; /* Center align horizontally */
+    border: 2px solid #d0d0d5; /* Border with light gray color */
+}
+
+/* Styles for the #years element */
+#years {
+    display: flex; /* Use flexbox layout */
+    justify-content: flex-end; /* Align content to the end */
+    position: sticky; /* Sticky positioning */
+    z-index: 999; /* Higher stacking order */
+    top: 0; /* Stick to the top */
+    background: #0a0a23; /* Dark blue background color */
+    color: #fff; /* White text color */
+    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0; /* Padding values */
+    margin: 0 -2px; /* Negative margin to align with border */
+}
+
+/* Styles for spans with class inside #years */
+#years span[class] {
+    font-weight: bold; /* Bold text */
+    width: 4.5rem; /* Fixed width */
+    text-align: right; /* Right-align text */
+}
+
+/* Padding for the table wrapper */
+.table-wrap {
+    padding: 0 0.75rem 1.5rem 0.75rem; /* Padding values */
+}
+
+/* Styles for tables */
+table {
+    border-collapse: collapse; /* Collapse table borders */
+    border: 0; /* No border */
+    width: 100%; /* Full width */
+    position: relative; /* Relative positioning */
+    margin-top: 3rem; /* Margin from the top */
+}
+
+/* Styles for table captions */
+table caption {
+    color: #356eaf; /* Caption text color */
+    font-size: 1.3em; /* Font size */
+    font-weight: normal; /* Normal font weight */
+    position: absolute; /* Absolute positioning */
+    top: -2.25rem; /* Position above the table */
+    left: 0.5rem; /* Left alignment */
+}
+
+/* Styles for table body cells */
+tbody td {
+    width: 100vw; /* Full viewport width */
+    min-width: 4rem; /* Minimum width */
+    max-width: 4rem; /* Maximum width */
+}
+
+/* Styles for table body headers */
+tbody th {
+    width: calc(100% - 12rem); /* Calculate width */
+}
+
+/* Styles for total rows in table */
+tr[class="total"] {
+    border-bottom: 4px double #0a0a23; /* Double bottom border */
+    font-weight: bold; /* Bold text */
+}
+
+/* Additional styles for total row headers */
+tr[class="total"] th {
+    text-align: left; /* Left-align text */
+    padding: 0.5rem 0 0.25rem 0.5rem; /* Padding values */
+}
+
+/* Styles for cells in total rows */
+tr.total td {
+    text-align: right; /* Right-align text */
+    padding: 0 0.25rem; /* Padding values */
+}
+
+/* Additional padding for third cell in total row */
+tr.total td:nth-of-type(3) {
+    padding-right: 0.5rem; /* Right padding */
+}
+
+/* Hover effect for total rows */
+tr.total:hover {
+    background-color: #99c9ff; /* Light blue background on hover */
+}
+
+/* Italic styling for cells with class 'current' */
+td.current {
+    font-style: italic; /* Italic font style */
+}
+
+/* Styling for data rows */
+tr.data {
+    background-image: linear-gradient(to bottom, #dfdfe2 1.845rem, white 1.845rem); /* Gradient background */
+}
+
+/* Styles for headers in data rows */
+tr.data th {
+    text-align: left; /* Left-align text */
+    padding-top: 0.3rem; /* Padding top */
+    padding-left: 0.5rem; /* Padding left */
+}
+
+/* Styles for descriptions in header of data rows */
+tr.data th .description {
+    display: block; /* Block display */
+    font-weight: normal; /* Normal font weight */
+    font-style: italic; /* Italic font style */
+    padding: 1rem 0 0.75rem; /* Padding values */
+    margin-right: -13.5rem; /* Negative margin */
+}
+
+/* Styles for cells in data rows */
+tr.data td {
+    vertical-align: top; /* Align content to top */
+    padding: 0.3rem 0.25rem 0; /* Padding values */
+    text-align: right; /* Right-align text */
+}
+
+/* Additional padding for last cell in data rows */
+tr.data td:last-of-type {
+    padding-right: 0.5rem; /* Right padding */
+}
