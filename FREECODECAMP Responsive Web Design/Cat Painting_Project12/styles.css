@@ -130,6 +130,99 @@ body {
 /* Style the cat's nose */
 .cat-nose {
   position: absolute; /* Position the element absolutely within its containing element. */
-  top: 108px; /* Position the element 108px below the top of its containing element. */
-  left: 85px; /* Position the element 85px to the left of its containing element. */
-  border-top-left-radius: 50%; /* Round
+  top: 108px; /* Position the nose 108px from the top of its containing element. */
+  left: 85px; /* Position the nose 85px from the left of its containing element. */
+  border-top-left-radius: 50%; /* Round the top-left corner of the nose to create a rounded shape. */
+  border-bottom-right-radius: 50%; /* Round the bottom-right corner of the nose to create a rounded shape. */
+  border-bottom-left-radius: 50%; /* Round the bottom-left corner of the nose to create a rounded shape. */
+  transform: rotate(180deg); /* Rotate the nose 180 degrees to position it correctly. */
+  border-left: 15px solid transparent; /* Create a transparent border on the left side to shape the nose. */
+  border-right: 15px solid transparent; /* Create a transparent border on the right side to shape the nose. */
+  border-bottom: 20px solid #442c2c; /* Create a solid border on the bottom side to form the nose shape. */
+}
+
+/* Style the cat's mouth */
+.cat-mouth div {
+  width: 30px; /* Set the width of the mouth element. */
+  height: 50px; /* Set the height of the mouth element. */
+  border: 2px solid #000; /* Add a 2px black solid border around the mouth element. */
+  border-radius: 190%/190px 150px 0 0; /* Apply complex border-radius to shape the mouth into a smile. */
+  border-color: black transparent transparent transparent; /* Set the border color, with the bottom border transparent. */
+}
+
+/* Style the left part of the cat's mouth line */
+.cat-mouth-line-left {
+  position: absolute; /* Position the element absolutely within its containing element. */
+  top: 88px; /* Position the mouth line 88px from the top of its containing element. */
+  left: 74px; /* Position the mouth line 74px from the left of its containing element. */
+  transform: rotate(170deg); /* Rotate the mouth line 170 degrees to position it correctly. */
+}
+
+/* Style the right part of the cat's mouth line */
+.cat-mouth-line-right {
+  position: absolute; /* Position the element absolutely within its containing element. */
+  top: 88px; /* Position the mouth line 88px from the top of its containing element. */
+  left: 91px; /* Position the mouth line 91px from the left of its containing element. */
+  transform: rotate(165deg); /* Rotate the mouth line 165 degrees to position it correctly. */
+}
+
+/* Style the left whiskers of the cat */
+.cat-whiskers-left div {
+  width: 40px; /* Set the width of each whisker element. */
+  height: 1px; /* Set the height of each whisker element. */
+  background-color: #000; /* Set the background color of each whisker element to black. */
+}
+
+/* Style the right whiskers of the cat */
+.cat-whiskers-right div {
+  width: 40px; /* Set the width of each whisker element. */
+  height: 1px; /* Set the height of each whisker element. */
+  background-color: #000; /* Set the background color of each whisker element to black. */
+}
+
+/* Style the top left whisker */
+.cat-whisker-left-top {
+  position: absolute; /* Position the element absolutely within its containing element. */
+  top: 120px; /* Position the whisker 120px from the top of its containing element. */
+  left: 52px; /* Position the whisker 52px from the left of its containing element. */
+  transform: rotate(10deg); /* Rotate the whisker 10 degrees clockwise to position it correctly. */
+}
+
+/* Style the middle left whisker */
+.cat-whisker-left-middle {
+  position: absolute; /* Position the element absolutely within its containing element. */
+  top: 127px; /* Position the whisker 127px from the top of its containing element. */
+  left: 52px; /* Position the whisker 52px from the left of its containing element. */
+  transform: rotate(3deg); /* Rotate the whisker 3 degrees clockwise to position it correctly. */
+}
+
+/* Style the bottom left whisker */
+.cat-whisker-left-bottom {
+  position: absolute; /* Position the element absolutely within its containing element. */
+  top: 134px; /* Position the whisker 134px from the top of its containing element. */
+  left: 52px; /* Position the whisker 52px from the left of its containing element. */
+  transform: rotate(-3deg); /* Rotate the whisker 3 degrees counterclockwise to position it correctly. */
+}
+
+/* Style the top right whisker */
+.cat-whisker-right-top {
+  position: absolute; /* Position the element absolutely within its containing element. */
+  top: 120px; /* Position the whisker 120px from the top of its containing element. */
+  left: 109px; /* Position the whisker 109px from the left of its containing element. */
+  transform: rotate(-10deg); /* Rotate the whisker 10 degrees counterclockwise to position it correctly. */
+}
+
+/* Style the middle right whisker */
+.cat-whisker-right-middle {
+  position: absolute; /* Position the element absolutely within its containing element. */
+  top: 127px; /* Position the whisker 127px from the top of its containing element. */
+  left: 109px; /* Position the whisker 109px from the left of its containing element. */
+  transform: rotate(-3deg); /* Rotate the whisker 3 degrees counterclockwise to position it correctly. */
+}
+
+/* Style the bottom right whisker */
+.cat-whisker-right-bottom {
+  position: absolute; /* Position the element absolutely within its containing element. */
+  top: 134px; /* Position the whisker 134px from the top of its containing element. */
+  left: 109px; /* Position the whisker 109px from the left of its containing element. */
+}
