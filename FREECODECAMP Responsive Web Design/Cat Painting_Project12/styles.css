@@ -1,7 +1,135 @@
+/* Apply border-box box-sizing to all elements. This means that padding and border are included in the element's total width and height. */
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #c9d2fc;
-  }
+  box-sizing: border-box;
+}
+
+/* Set the background color of the body element to a light blue color (#c9d2fc). */
+body {
+  background-color: #c9d2fc;
+}
+
+/* Style the cat's head */
+.cat-head {
+  position: absolute; /* Position the element absolutely within its containing element. */
+  right: 0; /* Align the right side of the element to the right side of its containing element. */
+  left: 0; /* Align the left side of the element to the left side of its containing element. */
+  top: 0; /* Align the top side of the element to the top side of its containing element. */
+  bottom: 0; /* Align the bottom side of the element to the bottom side of its containing element. */
+  margin: auto; /* Center the element within its containing element. */
+  background: linear-gradient(#5e5e5e 85%, #45454f 100%); /* Apply a linear gradient background. */
+  width: 205px; /* Set the width of the cat's head. */
+  height: 180px; /* Set the height of the cat's head. */
+  border: 1px solid #000; /* Add a black border around the cat's head. */
+  border-radius: 46%; /* Round the corners of the cat's head to create an oval shape. */
+}
+
+/* Style the cat's left ear */
+.cat-left-ear {
+  position: absolute; /* Position the element absolutely within its containing element. */
+  top: -26px; /* Position the element 26px above its containing element. */
+  left: -31px; /* Position the element 31px to the left of its containing element. */
+  z-index: 1; /* Position the element in front of other elements with a lower z-index. */
+  border-top-left-radius: 90px; /* Round the top-left corner of the ear. */
+  border-top-right-radius: 10px; /* Round the top-right corner of the ear. */
+  transform: rotate(-45deg); /* Rotate the element 45 degrees counterclockwise. */
+  border-left: 35px solid transparent; /* Create a transparent border on the left side. */
+  border-right: 35px solid transparent; /* Create a transparent border on the right side. */
+  border-bottom: 70px solid #5e5e5e; /* Create a solid border on the bottom side to form the ear shape. */
+}
+
+/* Style the cat's right ear */
+.cat-right-ear {
+  position: absolute; /* Position the element absolutely within its containing element. */
+  top: -26px; /* Position the element 26px above its containing element. */
+  left: 163px; /* Position the element 163px to the left of its containing element. */
+  z-index: 1; /* Position the element in front of other elements with a lower z-index. */
+  transform: rotate(45deg); /* Rotate the element 45 degrees clockwise. */
+  border-top-left-radius: 90px; /* Round the top-left corner of the ear. */
+  border-top-right-radius: 10px; /* Round the top-right corner of the ear. */
+  border-left: 35px solid transparent; /* Create a transparent border on the left side. */
+  border-right: 35px solid transparent; /* Create a transparent border on the right side. */
+  border-bottom: 70px solid #5e5e5e; /* Create a solid border on the bottom side to form the ear shape. */
+}
+
+/* Style the inner part of the cat's left ear */
+.cat-left-inner-ear {
+  position: absolute; /* Position the element absolutely within its containing element. */
+  top: 22px; /* Position the element 22px below the top of its containing element. */
+  left: -20px; /* Position the element 20px to the left of its containing element. */
+  border-top-left-radius: 90px; /* Round the top-left corner of the inner ear. */
+  border-top-right-radius: 10px; /* Round the top-right corner of the inner ear. */
+  border-bottom-right-radius: 40%; /* Round the bottom-right corner of the inner ear. */
+  border-bottom-left-radius: 40%; /* Round the bottom-left corner of the inner ear. */
+  border-left: 20px solid transparent; /* Create a transparent border on the left side. */
+  border-right: 20px solid transparent; /* Create a transparent border on the right side. */
+  border-bottom: 40px solid #3b3b4f; /* Create a solid border on the bottom side to form the inner ear shape. */
+}
+
+/* Style the inner part of the cat's right ear */
+.cat-right-inner-ear {
+  position: absolute; /* Position the element absolutely within its containing element. */
+  top: 22px; /* Position the element 22px below the top of its containing element. */
+  left: -20px; /* Position the element 20px to the left of its containing element. */
+  border-top-left-radius: 90px; /* Round the top-left corner of the inner ear. */
+  border-top-right-radius: 10px; /* Round the top-right corner of the inner ear. */
+  border-bottom-right-radius: 40%; /* Round the bottom-right corner of the inner ear. */
+  border-bottom-left-radius: 40%; /* Round the bottom-left corner of the inner ear. */
+  border-left: 20px solid transparent; /* Create a transparent border on the left side. */
+  border-right: 20px solid transparent; /* Create a transparent border on the right side. */
+  border-bottom: 40px solid #3b3b4f; /* Create a solid border on the bottom side to form the inner ear shape. */
+}
+
+/* Style the cat's left eye */
+.cat-left-eye {
+  position: absolute; /* Position the element absolutely within its containing element. */
+  top: 54px; /* Position the element 54px below the top of its containing element. */
+  left: 39px; /* Position the element 39px to the left of its containing element. */
+  border-radius: 60%; /* Round the corners of the eye to create an oval shape. */
+  transform: rotate(25deg); /* Rotate the element 25 degrees clockwise. */
+  width: 30px; /* Set the width of the eye. */
+  height: 40px; /* Set the height of the eye. */
+  background-color: #000; /* Set the background color of the eye to black. */
+}
+
+/* Style the cat's right eye */
+.cat-right-eye {
+  position: absolute; /* Position the element absolutely within its containing element. */
+  top: 54px; /* Position the element 54px below the top of its containing element. */
+  left: 134px; /* Position the element 134px to the left of its containing element. */
+  border-radius: 60%; /* Round the corners of the eye to create an oval shape. */
+  transform: rotate(-25deg); /* Rotate the element 25 degrees counterclockwise. */
+  width: 30px; /* Set the width of the eye. */
+  height: 40px; /* Set the height of the eye. */
+  background-color: #000; /* Set the background color of the eye to black. */
+}
+
+/* Style the inner part of the cat's left eye */
+.cat-left-inner-eye {
+  position: absolute; /* Position the element absolutely within its containing element. */
+  top: 8px; /* Position the element 8px below the top of its containing element. */
+  left: 2px; /* Position the element 2px to the left of its containing element. */
+  width: 10px; /* Set the width of the inner eye. */
+  height: 20px; /* Set the height of the inner eye. */
+  transform: rotate(10deg); /* Rotate the element 10 degrees clockwise. */
+  background-color: #fff; /* Set the background color of the inner eye to white. */
+  border-radius: 60%; /* Round the corners of the inner eye to create an oval shape. */
+}
+
+/* Style the inner part of the cat's right eye */
+.cat-right-inner-eye {
+  position: absolute; /* Position the element absolutely within its containing element. */
+  top: 8px; /* Position the element 8px below the top of its containing element. */
+  left: 18px; /* Position the element 18px to the left of its containing element. */
+  transform: rotate(-5deg); /* Rotate the element 5 degrees counterclockwise. */
+  width: 10px; /* Set the width of the inner eye. */
+  height: 20px; /* Set the height of the inner eye. */
+  background-color: #fff; /* Set the background color of the inner eye to white. */
+  border-radius: 60%; /* Round the corners of the inner eye to create an oval shape. */
+}
+
+/* Style the cat's nose */
+.cat-nose {
+  position: absolute; /* Position the element absolutely within its containing element. */
+  top: 108px; /* Position the element 108px below the top of its containing element. */
+  left: 85px; /* Position the element 85px to the left of its containing element. */
+  border-top-left-radius: 50%; /* Round
