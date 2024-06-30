@@ -1,0 +1,223 @@
+/* Resetting default styles for all elements */
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Setting base font size for easy rem calculation */
+html {
+  font-size: 62.5%; /* 1rem equals 10px (for easier calculation) */
+}
+
+/* Setting overall body styles */
+body {
+  font-family: 'Baskervville', serif; /* Main font family */
+  color: linen; /* Text color */
+  background-color: rgb(20, 30, 40); /* Background color */
+}
+
+/* Heading styles */
+h1 {
+  font-family: 'Anton', sans-serif; /* Specific heading font */
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif; /* Different heading fonts */
+}
+
+/* Link styles */
+a {
+  text-decoration: none; /* Remove underline */
+  color: linen; /* Link color */
+}
+
+/* Main content grid setup */
+main {
+  display: grid;
+  grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr); /* Three-column grid layout */
+  row-gap: 3rem; /* Spacing between rows */
+}
+
+/* Image styles */
+img {
+  width: 100%; /* Responsive images */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Horizontal rule style */
+hr {
+  margin: 1.5rem 0; /* Margin top and bottom */
+  border: 1px solid rgba(120, 120, 120, 0.6); /* Gray border with transparency */
+}
+
+/* Heading section styles */
+.heading {
+  grid-column: 2 / 3; /* Spanning content across second column */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two-column grid inside heading */
+  row-gap: 1.5rem; /* Spacing between rows */
+}
+
+/* Text content styles */
+.text {
+  grid-column: 2 / 3; /* Spanning content across second column */
+  font-size: 1.8rem; /* Font size */
+  letter-spacing: 0.6px; /* Letter spacing */
+  column-width: 25rem; /* Column width for text */
+  text-align: justify; /* Justified text alignment */
+}
+
+/* Hero section styles */
+.hero {
+  grid-column: 1 / -1; /* Spanning full width */
+  position: relative; /* Relative positioning */
+}
+
+/* Hero title styles */
+.hero-title {
+  text-align: center; /* Center aligning */
+  color: orangered; /* Text color */
+  font-size: 8rem; /* Large font size */
+}
+
+/* Hero subtitle styles */
+.hero-subtitle {
+  font-size: 2.4rem; /* Font size */
+  color: orangered; /* Text color */
+  text-align: center; /* Center aligning */
+}
+
+/* Author information styles */
+.author {
+  font-size: 2rem; /* Font size */
+  font-family: "Raleway", sans-serif; /* Font family */
+}
+
+/* Hover effect on author's name */
+.author-name a:hover {
+  background-color: #306203; /* Background color on hover */
+}
+
+/* Publish date styles */
+.publish-date {
+  color: rgba(255, 255, 255, 0.5); /* Text color with transparency */
+}
+
+/* Social icons section styles */
+.social-icons {
+  display: grid; /* Grid display */
+  font-size: 3rem; /* Font size */
+  grid-template-columns: repeat(5, 1fr); /* Five columns */
+  grid-auto-flow: column; /* Automatic column flow */
+  grid-auto-columns: 1fr; /* Automatic column width */
+  align-items: center; /* Center aligning */
+}
+
+/* First paragraph special styling */
+.first-paragraph::first-letter {
+  font-size: 6rem; /* Large initial letter */
+  color: orangered; /* Text color */
+  float: left; /* Float to the left */
+  margin-right: 1rem; /* Margin on the right */
+}
+
+/* Quote styles */
+.quote {
+  color: #00beef; /* Quote text color */
+  font-size: 2.4rem; /* Font size */
+  text-align: center; /* Center aligning */
+  font-family: "Raleway", sans-serif; /* Font family */
+}
+
+/* Quote content before and after pseudo-elements */
+.quote::before {
+  content: '" '; /* Opening quote */
+}
+
+.quote::after {
+  content: ' "'; /* Closing quote */
+}
+
+/* Text with images section styles */
+.text-with-images {
+  display: grid; /* Grid display */
+  grid-template-columns: 1fr 2fr; /* Two columns */
+  column-gap: 3rem; /* Spacing between columns */
+  margin-bottom: 3rem; /* Margin at the bottom */
+}
+
+/* List styles */
+.lists {
+  list-style-type: none; /* No list bullets */
+  margin-top: 2rem; /* Margin at the top */
+}
+
+.lists li {
+  margin-bottom: 1.5rem; /* Margin at the bottom of list items */
+}
+
+/* List title and subtitle styles */
+.list-title, .list-subtitle {
+  color: #00beef; /* Text color */
+}
+
+/* Image wrapper grid styles */
+.image-wrapper {
+  display: grid; /* Grid display */
+  grid-template-columns: 2fr 1fr; /* Two columns */
+  grid-template-rows: repeat(3, min-content); /* Three rows */
+  gap: 2rem; /* Spacing between grid items */
+  place-items: center; /* Center aligning items */
+}
+
+/* Full width images */
+.image-1, .image-3 {
+  grid-column: 1 / -1; /* Spanning full width */
+}
+
+/* Responsive design breakpoints */
+
+@media only screen and (max-width: 720px) {
+  .image-wrapper {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .text-with-images {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  /* Adjustments for very small screens */
+  .hero-title {
+    font-size: 6rem; /* Smaller hero title font size */
+  }
+  
+  /* Adjust font sizes */
+  .hero-subtitle,
+  .author,
+  .quote,
+  .list-title {
+    font-size: 1.8rem; /* Smaller font sizes */
+  }
+  
+  .social-icons {
+    font-size: 2rem; /* Smaller social icon size */
+  }
+
+  .text {
+    font-size: 1.6rem; /* Smaller text font size */
+  } 
+}
+
+@media only screen and (max-width: 420px) {
+  /* Further adjustments for very small screens */
+  .hero-title {
+    font-size: 4.5rem; /* Even smaller hero title font size */
+  }
+}
