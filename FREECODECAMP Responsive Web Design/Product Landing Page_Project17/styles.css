@@ -34,6 +34,7 @@ body {
 #nav-bar {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .nav-link {
@@ -79,8 +80,9 @@ ul {
 }
 
 .video-container {
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
     position: relative;
     overflow: hidden;
     margin: 0 auto;
@@ -96,6 +98,7 @@ ul {
 
 .pricing-grid {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 30px;
 }
@@ -107,6 +110,7 @@ ul {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: calc(30% - 20px);
+    margin-bottom: 20px;
 }
 
 .pricing-item h3 {
@@ -141,7 +145,7 @@ ul {
 
 form {
     margin-top: 20px;
-    max-width: 400px;
+    max-width: 100%;
 }
 
 label {
@@ -182,15 +186,17 @@ footer p {
     color: #fff;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     #nav-bar {
-        margin-top: 20px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .nav-link {
-        display: block;
-        margin: 10px 0;
-        text-align: center;
+        margin: 0 5px;
+        padding: 8px 15px;
+        font-size: 14px;
     }
 
     section {
@@ -208,18 +214,39 @@ footer p {
     }
 }
 
-#features {
-    scroll-margin-top: 100px;
+@media (max-width: 600px) {
+    #header-img {
+        width: 70px;
+    }
+
+    .nav-link {
+        padding: 8px 10px;
+        font-size: 12px;
+    }
+
+    section {
+        padding: 20px 10px;
+        margin: 60px 0 10px;
+    }
+
+    .pricing-item {
+        padding: 15px;
+        width: 90%;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    input[type="email"],
+    input[type="submit"] {
+        padding: 8px 10px;
+    }
 }
 
-#video-section {
-    scroll-margin-top: 100px;
-}
-
-#pricing {
-    scroll-margin-top: 100px;
-}
-
+#features,
+#video-section,
+#pricing,
 #contact {
     scroll-margin-top: 100px;
 }
