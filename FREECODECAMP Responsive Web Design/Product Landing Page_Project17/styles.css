@@ -198,39 +198,9 @@ footer p {
     scroll-margin-top: 100px;
 }
 
-@media screen and (min-width: 360px) and (max-width: 767px) {
+/*MEDIA QUERIES @800px */
 
-    body {
-
-        padding: 0;
-        margin: 0;
-    }
-
-    #header {
-        padding: 20px 20px;
-
-    }
-
-    #header-img {
-        display: none;
-    }
-
-    #nav-bar {
-        margin-top: 20px;
-        justify-content: center;
-    }
-
-    .nav-link {
-        display: inline-block;
-        margin: 3px 3px;
-        padding: 3px 5px;
-        font-size: 16px;
-        text-align: center;
-    }
-
-    section {
-        padding: 30px 15px;
-    }
+@media only screen and (max-width: 800px) {
 
     .pricing-grid {
         flex-direction: column;
@@ -242,8 +212,19 @@ footer p {
         margin-bottom: 10px;
     }
 
-    footer p {
-        color: #fff;
-    }
+/*MEDIA QUERIES @600px */
 
+@media only screen and (max-width: 600px) {
+
+#header {
+    flex-direction: column;
+    align-items: center;
+}
+
+#nav-bar{
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+}
+}
 }
