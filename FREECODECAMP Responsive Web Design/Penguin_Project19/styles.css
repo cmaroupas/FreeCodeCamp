@@ -1,0 +1,304 @@
+/* Root variables for penguin colors */
+:root {
+    --penguin-face: white; /* FACE COLOR */
+    --penguin-picorna: orange; /* BEAK AND FOOT COLOR */
+    --penguin-skin: gray; /* SKIN COLOR */
+  }
+  
+  /* Body styling */
+  body {
+    background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222)); /* BACKGROUND GRADIENT */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Left mountain styling */
+  .left-mountain {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255)); /* MOUNTAIN COLORS */
+    position: absolute;
+    transform: skew(0deg, 44deg);
+    z-index: 2;
+    margin-top: 100px;
+  }
+  
+  /* Back mountain styling */
+  .back-mountain {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255)); /* MOUNTAIN COLORS */
+    position: absolute;
+    z-index: 1;
+    transform: rotate(45deg);
+    left: 110px;
+    top: 225px;
+  }
+  
+  /* Sun styling */
+  .sun {
+    width: 200px;
+    height: 200px;
+    background-color: yellow; /* SUN COLOR */
+    position: absolute;
+    border-radius: 50%;
+    top: -75px;
+    right: -75px;
+  }
+  
+  /* Penguin styling */
+  .penguin {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    margin-top: 75px;
+    z-index: 4;
+    position: relative;
+    transition: transform 1s ease-in-out 0ms;
+  }
+  
+  /* Penguin elements positioning */
+  .penguin * {
+    position: absolute;
+  }
+  
+  /* Penguin scaling on click */
+  .penguin:active {
+    transform: scale(1.5);
+    cursor: not-allowed;
+  }
+  
+  /* Penguin head styling */
+  .penguin-head {
+    width: 50%;
+    height: 45%;
+    background: linear-gradient(45deg, var(--penguin-skin), rgb(239, 240, 228)); /* HEAD GRADIENT */
+    border-radius: 70% 70% 65% 65%;
+    top: 10%;
+    left: 25%;
+    z-index: 1;
+  }
+  
+  /* Penguin face styling */
+  .face {
+    width: 60%;
+    height: 70%;
+    background-color: var(--penguin-face); /* FACE COLOR */
+    border-radius: 70% 70% 60% 60%;
+    top: 15%;
+  }
+  
+  /* Left face positioning */
+  .face.left {
+    left: 5%;
+  }
+  
+  /* Right face positioning */
+  .face.right {
+    right: 5%;
+  }
+  
+  /* Penguin chin styling */
+  .chin {
+    width: 90%;
+    height: 70%;
+    background-color: var(--penguin-face); /* FACE COLOR */
+    top: 25%;
+    left: 5%;
+    border-radius: 70% 70% 100% 100%;
+  }
+  
+  /* Penguin eye styling */
+  .eye {
+    width: 15%;
+    height: 17%;
+    background-color: black; /* EYE COLOR */
+    top: 45%;
+    border-radius: 50%;
+  }
+  
+  /* Left eye positioning */
+  .eye.left {
+    left: 25%;
+  }
+  
+  /* Right eye positioning */
+  .eye.right {
+    right: 25%;
+  }
+  
+  /* Penguin eye lid styling */
+  .eye-lid {
+    width: 150%;
+    height: 100%;
+    background-color: var(--penguin-face); /* FACE COLOR */
+    top: 25%;
+    left: -23%;
+    border-radius: 50%;
+  }
+  
+  /* Penguin blush styling */
+  .blush {
+    width: 15%;
+    height: 10%;
+    background-color: pink; /* BLUSH COLOR */
+    top: 65%;
+    border-radius: 50%;
+  }
+  
+  /* Left blush positioning */
+  .blush.left {
+    left: 15%;
+  }
+  
+  /* Right blush positioning */
+  .blush.right {
+    right: 15%;
+  }
+  
+  /* Penguin beak styling */
+  .beak {
+    height: 10%;
+    background-color: var(--penguin-picorna); /* BEAK COLOR */
+    border-radius: 50%;
+  }
+  
+  /* Top beak styling */
+  .beak.top {
+    width: 20%;
+    top: 60%;
+    left: 40%;
+  }
+  
+  /* Bottom beak styling */
+  .beak.bottom {
+    width: 16%;
+    top: 65%;
+    left: 42%;
+  }
+  
+  /* Penguin shirt styling */
+  .shirt {
+    font: bold 25px Helvetica, sans-serif;
+    top: 165px;
+    left: 127.5px;
+    z-index: 1;
+    color: #6a6969; /* SHIRT COLOR */
+  }
+  
+  /* Shirt text positioning */
+  .shirt div {
+    font-weight: initial;
+    top: 22.5px;
+    left: 12px;
+  }
+  
+  /* Penguin body styling */
+  .penguin-body {
+    width: 53%;
+    height: 45%;
+    background: linear-gradient(
+      45deg,
+      rgb(134, 133, 133) 0%,
+      rgb(234, 231, 231) 25%,
+      white 67%
+    ); /* BODY GRADIENT */
+    border-radius: 80% 80% 100% 100%;
+    top: 40%;
+    left: 23.5%;
+  }
+  
+  /* Penguin body skin overlay */
+  .penguin-body::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 45%;
+    background-color: var(--penguin-skin); /* SKIN COLOR */
+    top: 10%;
+    left: 25%;
+    border-radius: 0% 0% 100% 100%;
+    opacity: 70%;
+  }
+  
+  /* Penguin arm styling */
+  .arm {
+    width: 30%;
+    height: 60%;
+    background: linear-gradient(
+      90deg,
+      var(--penguin-skin),
+      rgb(209, 210, 199)
+    );
+    border-radius: 30% 30% 30% 120%;
+    z-index: -1;
+  }
+  
+  /* Left arm styling */
+  .arm.left {
+    top: 35%;
+    left: 5%;
+    transform-origin: top left;
+    transform: rotate(130deg) scaleX(-1);
+    animation: 3s linear infinite wave;
+  }
+  
+  /* Right arm styling */
+  .arm.right {
+    top: 0%;
+    right: -5%;
+    transform: rotate(-45deg);
+  }
+  
+  /* Arm animation */
+  @keyframes wave {
+    10% {
+      transform: rotate(110deg) scaleX(-1);
+    }
+    20% {
+      transform: rotate(130deg) scaleX(-1);
+    }
+    30% {
+      transform: rotate(110deg) scaleX(-1);
+    }
+    40% {
+      transform: rotate(130deg) scaleX(-1);
+    }
+  }
+  
+  /* Penguin foot styling */
+  .foot {
+    width: 15%;
+    height: 30%;
+    background-color: var(--penguin-picorna); /* BEAK AND FOOT COLOR */
+    top: 85%;
+    border-radius: 50%;
+    z-index: -1;
+  }
+  
+  /* Left foot styling */
+  .foot.left {
+    left: 25%;
+    transform: rotate(80deg);
+  }
+  
+  /* Right foot styling */
+  .foot.right {
+    right: 25%;
+    transform: rotate(-80deg);
+  }
+  
+  /* Ground styling */
+  .ground {
+    width: 100vw;
+    height: 400px;
+    background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255)); /* GROUND GRADIENT */
+    z-index: 3;
+    position: absolute;
+    margin-top: -58px;
+    height: calc(100vh - 300px);
+  }
+  
