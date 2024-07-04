@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to bottom, #f3f5f7, #255664);
+}
+
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(51, 51, 51, 0.8);
+  padding: 1.5rem 0;
+  z-index: 1000;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  padding: 1rem;
+}
+
+nav ul li a:hover {
+  color: #8ac1ca;
+}
+
+#welcome-section {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/random/1600x900');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+#welcome-section .intro-title {
+  font-family: 'Roboto', sans-serif; 
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  margin-top: 6rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+
+#welcome-section .intro-subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #8ac1ca;
+  animation: fadeIn 2s ease-in-out 0.5s;
+}
+
+#welcome-section .intro-projects {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  color: #ffffff;
+  animation: fadeIn 2s ease-in-out 1s;
+  margin-top: 18rem; 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#projects {
+  padding: 4rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.project-tile {
+  flex: 1 1 300px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  margin-bottom: 2rem; 
+}
+
+.project-tile:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+}
+
+.project-tile img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px 10px 0 0;
+}
+
+.project-tile a {
+  display: block;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  transition: color 0.3s ease; 
+}
+
+.project-tile a:hover {
+  color: #8ac1ca; 
+}
+
+.project-tile p {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #666;
+  font-family: 'Lato', sans-serif;
+}
+
+
+#contact {
+  padding: 4rem 2rem;
+  background: #333;
+  color: white;
+  text-align: center;
+}
+
+#profile-link {
+  color: #8ac1ca;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#profile-link:hover {
+  color: #eee;
+  text-decoration: underline; 
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 1rem 0;
+  }
+
+  nav ul {
+    justify-content: space-around;
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  #welcome-section .intro-title {
+    margin-top: 3rem; 
+    font-size: 3rem; 
+  }
+
+  #welcome-section .intro-projects {
+    margin-top: 14rem; 
+    font-size: 1rem; 
+  }
+
+  .project-tile {
+    flex: 1 1 calc(50% - 1rem); 
+  }
+}

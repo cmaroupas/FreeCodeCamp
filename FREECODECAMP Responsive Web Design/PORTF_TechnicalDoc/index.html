@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>HTML Technical Documentation</header>
+        <a class="nav-link" href="#introduction_to_html">Introduction to HTML</a>
+        <a class="nav-link" href="#html_basics">HTML Basics</a>
+        <a class="nav-link" href="#html_text_formatting">HTML Text Formatting</a>
+        <a class="nav-link" href="#html_lists">HTML Lists</a>
+        <a class="nav-link" href="#html_tables">HTML Tables</a>
+        <a class="nav-link" href="#html_forms">HTML Forms</a>
+        <a class="nav-link" href="#html_images">HTML Images</a>
+        <a class="nav-link" href="#html_semantic_elements">HTML Semantic Elements</a>
+        <a class="nav-link" href="#html_media_elements">HTML Media Elements</a>
+        <a class="nav-link" href="#html5_apis">HTML5 APIs</a>
+        <a class="nav-link" href="#advanced_html_topics">Advanced HTML Topics</a>
+        <a class="nav-link" href="#html_best_practices">HTML Best Practices</a>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="introduction_to_html">
+            <header>Introduction to HTML</header>
+            <p>HTML (HyperText Markup Language) is the standard markup language used to create web pages. It defines the structure and content of a web page using a variety of tags and attributes.</p>
+            <code>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html lang="en"&gt;<br>
+                &lt;head&gt;<br>
+                &nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+                &nbsp;&nbsp;&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                &nbsp;&nbsp;&lt;title&gt;Your Page Title&lt;/title&gt;<br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                &nbsp;&nbsp;&lt;h1&gt;Hello, World!&lt;/h1&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;
+            </code>
+        </section>
+
+        <section class="main-section" id="html_basics">
+            <header>HTML Basics</header>
+            <p>HTML documents consist of a hierarchy of elements, each with its own purpose and structure. Here are some fundamental elements:</p>
+            <ul>
+                <li>Headings (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>)</li>
+                <li>Paragraphs (<code>&lt;p&gt;</code>)</li>
+                <li>Links (<code>&lt;a&gt;</code>)</li>
+                <li>Images (<code>&lt;img&gt;</code>)</li>
+                <li>Lists (unordered and ordered)</li>
+                <li>Forms (<code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>)</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="html_text_formatting">
+            <header>HTML Text Formatting</header>
+            <p>HTML provides tags to format text and emphasize content:</p>
+            <ul>
+                <li>Bold and italic text (<code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code>)</li>
+                <li>Subscript and superscript text (<code>&lt;sub&gt;</code>, <code>&lt;sup&gt;</code>)</li>
+                <li>Line breaks (<code>&lt;br&gt;</code>)</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="html_lists">
+            <header>HTML Lists</header>
+            <p>Lists are used to organize content:</p>
+            <ul>
+                <li>Unordered lists (<code>&lt;ul&gt;</code>)</li>
+                <li>Ordered lists (<code>&lt;ol&gt;</code>)</li>
+                <li>Definition lists (<code>&lt;dl&gt;</code>)</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="html_tables">
+            <header>HTML Tables</header>
+            <p>Tables are used to display data in rows and columns:</p>
+            <ul>
+                <li>Creating tables with <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, and <code>&lt;td&gt;</code></li>
+                <li>Table headers with <code>&lt;th&gt;</code></li>
+                <li>Spanning rows or columns with attributes like <code>rowspan</code> and <code>colspan</code></li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="html_forms">
+            <header>HTML Forms</header>
+            <p>Forms are used to collect user input:</p>
+            <ul>
+                <li>Form structure with <code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;textarea&gt;</code>, and <code>&lt;button&gt;</code></li>
+                <li>Form elements attributes (e.g., <code>type</code>, <code>name</code>, <code>value</code>)</li>
+                <li>Form submission methods (e.g., <code>GET</code>, <code>POST</code>)</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="html_images">
+            <header>HTML Images</header>
+            <p>Images can be included in HTML documents:</p>
+            <ul>
+                <li>Inserting images with <code>&lt;img&gt;</code></li>
+                <li>Image attributes (e.g., <code>src</code>, <code>alt</code>, <code>width</code>, <code>height</code>)</li>
+                <li>Responsive images and best practices</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="html_semantic_elements">
+            <header>HTML Semantic Elements</header>
+            <p>Semantic elements provide meaning to the structure of web pages:</p>
+            <ul>
+                <li>Usage of semantic elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;footer&gt;</code></li>
+                <li>Accessibility benefits of semantic HTML</li>
+                <li>Role of ARIA (Accessible Rich Internet Applications) attributes</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="html_media_elements">
+            <header>HTML Media Elements</header>
+            <p>HTML supports multimedia elements:</p>
+            <ul>
+                <li>Embedding audio with <code>&lt;audio&gt;</code></li>
+                <li>Embedding video with <code>&lt;video&gt;</code></li>
+                <li>Attributes and sources for multimedia elements</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="html5_apis">
+            <header>HTML5 APIs</header>
+            <p>HTML5 introduces several APIs for enhanced web functionality:</p>
+            <ul>
+                <li>Geolocation API</li>
+                <li>Local Storage API</li>
+                <li>Canvas API</li>
+                <li>Web Workers API</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="advanced_html_topics">
+            <header>Advanced HTML Topics</header>
+            <p>Explore advanced features and techniques in HTML:</p>
+            <ul>
+                <li>Custom data attributes</li>
+                <li>Responsive web design principles</li>
+                <li>HTML meta tags and SEO</li>
+                <li>Integration with CSS and JavaScript</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="html_best_practices">
+            <header>HTML Best Practices</header>
+            <p>Best practices for writing efficient and maintainable HTML code:</p>
+            <ul>
+                <li>Clean and readable HTML structure</li>
+                <li>Accessibility considerations</li>
+                <li>Cross-browser compatibility tips</li>
+                <li>Validation with HTML validators</li>
+            </ul>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
