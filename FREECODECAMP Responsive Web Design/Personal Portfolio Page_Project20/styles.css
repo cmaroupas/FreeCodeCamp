@@ -177,6 +177,18 @@ nav ul li a:hover {
   opacity: 0.6;
 }
 
+#linkedin-link {
+  color: #8ac1ca;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#linkedin-link:hover {
+  color: #eee;
+  text-decoration: underline;
+}
+
 
 @media (max-width: 768px) {
   nav {
