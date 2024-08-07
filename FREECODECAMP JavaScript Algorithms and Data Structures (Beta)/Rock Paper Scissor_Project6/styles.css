@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Merriweather:wght@400&display=swap');
+
+:root {
+    --dark-bg: #1c1c1c;
+    --light-bg: #2e2e2e;
+    --primary-blue: #3498db;
+    --secondary-blue: #2980b9;
+    --accent-green: #2ecc71;
+    --accent-purple: #9b59b6;
+    --text-white: #ffffff;
+}
+
+body {
+    background-color: var(--dark-bg);
+    color: var(--text-white);
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 20px 0;
+    color: var(--primary-blue);
+    text-shadow: 0 0 5px var(--primary-blue);
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn {
+    cursor: pointer;
+    width: 120px;
+    height: 50px;
+    margin: 10px;
+    color: var(--text-white);
+    background: linear-gradient(145deg, var(--primary-blue), var(--secondary-blue));
+    border: 2px solid var(--accent-purple);
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(145deg, var(--secondary-blue), var(--accent-purple));
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.03);
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.rules-container {
+    padding: 20px;
+    margin: auto;
+    border-radius: 20px;
+    border: 2px solid var(--accent-purple);
+    background-color: var(--light-bg);
+    color: var(--primary-blue);
+    max-width: 80%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    font-family: 'Lora', serif;
+}
+
+.rules-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.rules-container li {
+    color: var(--text-white);
+    border-radius: 5px;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.rules-container p {
+    margin: 10px 0;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+    text-shadow: 0 0 3px var(--accent-green);
+}
+
+.score {
+    font-weight: 700;
+}
+
+.results-container {
+    font-size: 1.3rem;
+    margin: 15px 0;
+    color: var(--accent-green);
+}
+
+#winner-msg {
+    margin-top: 25px;
+    color: var(--secondary-blue);
+    font-size: 1.5rem;
+}
+
+#reset-game-btn {
+    display: none;
+    margin: 20px auto;
+    background: linear-gradient(145deg, var(--primary-blue), var(--secondary-blue));
+    color: var(--text-white);
+    border: 2px solid var(--accent-purple);
+}
