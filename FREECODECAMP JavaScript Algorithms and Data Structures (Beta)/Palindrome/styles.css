@@ -1,0 +1,135 @@
+:root {
+    --bg-main-color: #1f2029;
+    --toned-down-white: #f1f1f1;
+    --highlight-main: #00aaff; 
+    --hover-main: #008080; 
+    --active-main: #004d4d; 
+}
+
+body {
+    background-color: var(--bg-main-color);
+    color: var(--toned-down-white);
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; 
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-wrapper {
+    padding: 15px;
+    box-sizing: border-box;
+    max-width: 750px;
+}
+
+.content-wrapper h1,
+.content-wrapper p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content-wrapper h1 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-size: 3rem; 
+}
+
+
+.content-wrapper p {
+    letter-spacing: 2px;
+    color: var(--highlight-main);
+    font-family: "Lato", sans-serif;
+    max-width: 400px;
+    margin: auto;
+}
+
+.check-wrapper {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.form-control {
+    background-color: var(--bg-main-color);
+    border-color: rgba(241, 241, 241, 0.3);
+    color: var(--toned-down-white);
+    letter-spacing: 2px;
+    width: 100%;
+    max-width: 500px; 
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    border-color: rgba(241, 241, 241, 0.5);
+    border-width: 2px;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #00aaff, #008080); 
+    border: none;
+    width: 130px;
+    height: 45px;
+    color: var(--toned-down-white);
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin-top: 20px; 
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #008080, #004d4d);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(0, 128, 128, 0.3);
+}
+
+.btn-primary:active {
+    background: linear-gradient(135deg, #004d4d, #002a2a);
+    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(2px);
+}
+
+#result {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+    min-height: 70px;
+}
+
+@media (max-width: 430px) {
+    .content-wrapper h1 {
+        font-size: 2rem;
+    }
+    .content-wrapper p {
+        font-size: 0.9rem;
+    }
+    .btn-primary {
+        font-size: 12px;
+        width: 100px;
+    }
+}
