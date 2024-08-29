@@ -27,7 +27,7 @@ const getMean = (array) =>
   // Function to calculate the mode of an array of numbers
   // The mode is the number that appears most frequently in the array.
   // The mode returns nothing (null) when all elements in the array have the same frequency,
-// indicating that there is no single mode (i.e., no number appears more frequently than others).
+  // indicating that there is no single mode (i.e., no number appears more frequently than others).
   const getMode = (array) => {
     // Initialize an empty object to keep track of the frequency of each element in the array.
     const counts = {};
