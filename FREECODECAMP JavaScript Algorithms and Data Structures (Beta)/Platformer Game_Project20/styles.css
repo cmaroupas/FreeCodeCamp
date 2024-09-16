@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #212121;
+  --section-bg-color: #333333;
+  --btn-bg-color: #ffffff;
+  --btn-hover-bg: #e0e0e0;
+  --btn-text-color: #000000;
+  --font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: var(--font-family);
+}
+
+.start-screen {
+  background-color: var(--section-bg-color);
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  padding: 30px;
+  padding-bottom: 10px;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--btn-bg-color);
+}
+
+.instructions {
+  text-align: center;
+  font-size: 1.1rem;
+  margin: 20px;
+  line-height: 1.8rem;
+  color: #b0b0b0;
+}
+
+.btn {
+  cursor: pointer;
+  width: 120px;
+  margin: 10px;
+  color: var(--btn-text-color);
+  font-size: 18px;
+  background-color: var(--btn-bg-color);
+  border: 2px solid var(--btn-text-color);
+  border-radius: 15px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover-bg);
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkpoint-screen {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  display: none;
+}
+
+#canvas {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .start-screen {
+      width: 60%;
+      max-width: 700px;
+  }
+
+  .checkpoint-screen {
+      max-width: 350px;
+  }
+}
