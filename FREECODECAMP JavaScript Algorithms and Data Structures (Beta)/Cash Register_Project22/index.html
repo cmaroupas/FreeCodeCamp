@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <div id="instructions">
+                <h2>Instructions</h2>
+                <p>Welcome to the Cash Register App! Here’s a brief overview of how it works:</p>
+                <ul>
+                    <li><strong>Price:</strong> Enter the price of the item you wish to purchase.</li>
+                    <li><strong>Cash:</strong> Enter the amount of cash you are providing to pay for the item.</li>
+                    <li><strong>Cash Drawer:</strong> The cash drawer contains various denominations, including pennies, nickels, dimes, quarters, ones, fives, tens, twenties, and hundreds.</li>
+                    <li><strong>Purchase Button:</strong> Click the "Purchase" button to calculate the change due.</li>
+                </ul>
+                <p>Based on the cash provided and the cash in the drawer, the app will display one of the following statuses:</p>
+                <ul>
+                    <li><strong>Status: INSUFFICIENT_FUNDS</strong> - The cash in the drawer is not enough to provide the correct change, or it's not possible to give exact change.</li>
+                    <li><strong>Status: CLOSED</strong> - The cash in the drawer is exactly equal to the change due.</li>
+                    <li><strong>Status: OPEN</strong> - The cash in the drawer is more than the change due, and exact change can be given. The change will be listed in descending order of denominations.</li>
+                </ul>
+                <p>Try entering different prices and cash amounts to see how the app responds.</p>
+            </div>
+        </div>
+
+        <div class="center-section">
+            <div id="cash-register">
+                <img src="https://cdn.pixabay.com/photo/2012/04/01/17/34/register-23666_960_720.png" alt="Cash Register" id="register-image">
+                <div>
+                    <div>
+                        <label for="price">Price:</label>
+                        <input type="number" id="price" step="0.01" placeholder="Enter price">
+                    </div>
+                    <div>
+                        <label for="cash">Cash:</label>
+                        <input type="number" id="cash" step="0.01" placeholder="Enter cash">
+                    </div>
+                    <button id="purchase-btn">Purchase</button>
+                    <div>
+                        <p id="change-due"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
