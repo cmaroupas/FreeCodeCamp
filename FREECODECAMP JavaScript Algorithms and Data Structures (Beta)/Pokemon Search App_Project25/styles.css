@@ -1,0 +1,138 @@
+body {
+    background: url("https://m.media-amazon.com/images/I/61lqRxbsC5L._AC_SL1500_.jpg") no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    font-family: 'Chela One', cursive;
+}
+
+h1 {
+    color: #00BFFF;
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem 0; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 128, 0, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    width: 100%;
+    max-width: 700px;
+    height: 700px; 
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden; 
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pokemon-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#pokemon-form > span {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #FFD700;
+}
+
+#search-input {
+    width: 70%;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border: 2px solid #FFA500;
+    border-radius: 5px;
+    text-align: center;
+    background: linear-gradient(#87CEFA, #4682B4);
+    transition: border-color 0.3s ease;
+    box-sizing: border-box; 
+}
+
+input:focus {
+    border-color: #FFA500;
+    box-shadow: 0 0 5px rgba(255, 165, 0, 1);
+}
+
+#search-button {
+    margin-top: 0.5rem; 
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    min-width: 100px; 
+}
+
+#search-button:hover {
+    background-color: #FF6347;
+}
+
+.pokemon {
+    margin-top: 1rem;
+}
+
+.name-id-weight-height {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+#types {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    justify-content: center;
+}
+
+.types {
+    border-radius: 10px;
+    padding: 0.25rem 0.5rem;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+img {
+    height: 80px; 
+    width: 80px; 
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.table-wrapper {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+table {
+    border-spacing: 0.3rem;
+    width: 100%;
+}
+
+tr {
+    height: 1rem;
+}
+
+td, th {
+    background: rgba(0, 191, 255, 0.8);
+    text-align: center;
+    border-radius: 0.4rem;
+    font-size: 1.2rem; 
+    padding: 0.25rem; 
+}
